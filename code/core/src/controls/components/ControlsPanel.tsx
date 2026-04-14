@@ -31,7 +31,7 @@ const clean = (obj: { [key: string]: any }) =>
   );
 
 const AddonWrapper = styled.div<{ showSaveFromUI: boolean }>(({ showSaveFromUI, theme }) => ({
-  height: '100%',
+  minHeight: '100%',
   maxHeight: '100vh',
   paddingBottom: showSaveFromUI ? 41 : 0,
   backgroundColor: theme.background.content,
